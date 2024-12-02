@@ -1,0 +1,604 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  margin: 0;
+}
+
+/* home-intro */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background-color: #151515;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 24px;
+  color: whitesmoke;
+  font-weight: 800;
+  transition: 0.3 ease;
+}
+.logo:hover{
+  color: #d45101;
+  text-shadow: 0 0 25px #d45101;
+  transform: scale(1.1);
+}
+span{
+  color: #d45101;
+}
+.navbar a{
+  font-size: 18px;
+  color: whitesmoke;
+  font-weight: 800;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.6s ease;
+}
+.navbar a:hover, 
+.navbar a.active{
+  color: #d45101;
+  border-bottom:3px solid #d45101;
+}
+.contact{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border:2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
+.contact:hover{
+  background-color: #d45101;
+  box-shadow: 0 0 25px #d45101;
+}
+.home{
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  display:flex;
+  align-items: center;
+  gap:96px;
+  padding:30px 12% 0;
+}
+.introduction-text{
+  max-width: 800px;
+  animation: slideFromLeft 1.3s ease-in-out;
+}
+.introduction-text h3{
+  font-size: 48px;
+  line-height: 1.2;
+}
+.introduction-text h4{
+  font-size: 32px;
+}
+.introduction-text p{
+  font-size: 18px;
+  margin: 25px 0 30px;
+}
+.btn-box{
+  width: 345px;
+}
+.showAboutBtn{
+  animation: hoveringBtn 0.8s infinite ease-in-out alternate;
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+  border:2px solid transparent;
+  border-radius: 32px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.showAboutBtn:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.img-box img{
+  border-radius: 50%;
+  max-width: 550px;
+  animation: slideFromRight 1.3s ease-in-out;;
+
+}
+
+
+/* home-intro */
+
+/* about */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 64px;
+  background: #151515;
+  width: 100%;
+}
+.about-content{
+  max-width: 800px;
+  animation: slideFromDown 1.3s ease-in-out;
+}
+.googlemap{
+  position: relative;
+  width: 550px;
+  border-radius: 16px;
+  
+  
+}
+.map-container{
+  background-color: #d45101;
+  padding: 4px;
+  border-radius: 16px;
+  box-shadow: 8px 16px 3px whitesmoke inset;
+  animation: slideFromTop 1.3s ease-in-out;
+  
+}
+.about-content h2{
+  text-align: left;
+  color: white;
+  font-size: 64px;
+}
+.about-content p{
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.showSkillsBtn{
+  margin-top:16px;
+  padding: 16px 32px;
+  background-color: #d45101;
+  color: white;
+  border:2px solid transparent;
+  border-radius: 12px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+  transition: 0.4s ease;
+  cursor: pointer;
+  animation: hoveringBtn 0.8s infinite ease-in-out alternate;
+}
+.showSkillsBtn:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+/* about */
+
+
+/* -------------------skills----------------------- */
+.skills{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 96px;
+  height: 100%;
+}
+.skills-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 48px;
+  gap: 64px;
+  background: white;
+  width: 100%;
+}
+.my-skills{
+  margin: 0 auto;
+  padding: 0;
+}
+.my-skills h1{
+  font-size: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  animation: slideFromLeft 1s ease-in-out;
+}
+.skills{
+  justify-content: center;
+  align-items: center;
+}
+.skill-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  color: white;
+  border-radius: 16px;
+  animation: slideFromRight 1s ease-in-out;
+}
+
+.developed-skills{
+  position: relative;
+}
+.developed-skills img{
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.skills-content{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.86);
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: justify;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  
+}
+.skills-content:hover{
+  opacity: 1;
+  border-radius: 16px;
+}
+.skills-content h2{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 24px 40px;
+}
+.skills-content p{
+  font-size: 16px;
+  margin: 0 40px;
+}
+.skills-content > *{
+  transform:translateY(25px);
+  transition: transform 1s;
+}
+.skills-content:hover > *{
+  transform:translateY(0px);
+}
+
+.showProjectsBtn{
+  margin-top:16px;
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+  border:2px solid transparent;
+  border-radius: 12px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+  transition: 0.4s ease;
+  cursor: pointer;
+  animation: slideFromLeft 1.3s ease-in-out;
+  animation: hoveringBtn 0.8s infinite ease-in-out alternate;
+}
+.showProjectsBtn:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+
+
+/* ---------------skills------------------------- */
+
+
+
+
+/* ---------------------projects----------------- */
+
+.myproject-section{
+  background-color: #151515;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 96px 0;
+  
+}
+.my-projects h1{
+  font-size: 64px;
+  animation: slideFromRight 1.3s ease-in-out;
+}
+.myprojects{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 32px 0;
+  animation: slideFromLeft 1.3s ease-in-out;
+}
+.project-card{
+  height: 400px;
+  width: 400px;
+  margin:8px;
+  box-shadow: 5px 5px 5px grey;
+  position: relative;
+  overflow: hidden;
+}
+.project-card img{
+  height: 400px;
+  width: 100%;
+  border-radius: 3px;
+  
+}
+.project-description{
+  text-align: justify;
+  height: 70px;
+  width: 400px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: rgb(27, 27, 27, .8);
+  color: white;
+}
+.project-description h1{
+  margin: 10px;
+  font-size: 24px;
+}
+.project-description p{
+  max-width: 360px;
+  height: 100%;
+  margin: 10px;
+  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+.project-card:hover{
+  cursor: pointer;
+}
+.project-card:hover .project-description{
+  height: 180px;
+  width: 400px;
+  background-color: black;
+  transition: 0.6s ease;
+}
+.project-card:hover p{
+  opacity: 1;
+  visibility:visible;
+}
+.project-card:hover img{
+  transform: scale(1.3) rotate(-3deg);
+  opacity: 0.8;
+}
+
+.showContactBtn{
+  margin-top:16px;
+  padding: 16px 32px;
+  background-color: #d45101;
+  color: white;
+  border:2px solid transparent;
+  border-radius: 12px;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+  transition: 0.4s ease;
+  cursor: pointer;
+  animation: slideFromRight 1.3s ease-in-out;
+  animation: hoveringBtn 0.8s infinite ease-in-out alternate;
+}
+.showContactBtn:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+
+
+
+/* ---------------------projects----------------- */
+
+
+/* -----------------contact--------------------- */
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.contact-form h2{
+  
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 36px;
+  animation: slideFromLeft 1.3s ease-in-out;
+
+}
+.contact-form form {
+  max-width: 800px;
+  width: 100%;
+  margin: 16px auto;
+  text-align: center;
+  margin-bottom: 48px;
+  animation: slideFromRight 1.3s ease-in-out;
+  
+}
+.contact-form form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-form form, .input-box input,
+.contact-form form textarea{
+  width: 100%;
+  padding: 24px;
+  font-size: 18px;
+  color: black;
+  border-radius: 16px;
+  margin: 16px 0;
+
+}
+
+.submitBTN{
+    margin-top:16px;
+    padding: 16px 32px;
+    background-color: black;
+    color: white;
+    border:2px solid transparent;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    font-weight: 800;
+    transition: 0.4s ease;
+    cursor: pointer;
+    animation: slideFromLeft 1.3s ease-in-out;
+}
+.submitBTN:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+/* -----------------contact--------------------- */
+
+
+
+/* -------------footer----------------- */
+
+.footer{
+  position: relative;
+  bottom: 0;;
+  width: 100%;
+  padding: 40px 0;
+  background-color: black;
+}
+.footer .socials{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+.footer .socials a{
+  font-size: 24px;
+  color: white;
+  border: 2px solid #d45101;
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow:  inset 0 0 10px #d45101,
+  0 0 10px #d45101;
+  transition: 0.3s ease;
+}
+.footer .socials a:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: #d45101;
+  border: 2px solid #d45101;
+}
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+.footer ul li a:hover{
+  border-bottom: 3px solid #d45101;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer .copyright{
+  margin-top: 15px;
+  text-align:center;
+  font-size: 12px;
+  color: white;
+}
+
+
+
+/* -------------footer----------------- */
+
+
+
+
+/* animations */
+@keyframes hoveringBtn {
+    100%{
+      transform: translateY(12px);
+      -webkit-transform: translateY(12px0);
+      -moz-transform: translateY(12px);
+      -ms-transform: translateY(12px);
+      -o-transform: translateY(12px);
+    }
+}
+
+@keyframes slideFromLeft {
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromTop {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromDown {
+  0%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
